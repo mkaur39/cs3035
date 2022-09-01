@@ -10,7 +10,7 @@
 
 int main( void )
 {
-    printf("This is our first C program\n");
+    printf("This is our first C program\n\a");
 
     return 0; /*indicates that the program returns succesfully*/
 } /*end main function*/

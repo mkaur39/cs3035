@@ -8,8 +8,8 @@
 /*function main begins program execution*/
 int main( void )
 {
-    int int1; //first number to be input by user
-    int int2; //second number to be input by user
+    int int1=0; //first number to be input by user
+    int int2=0; //second number to be input by user
     int sum; //variable where sum will be stored
 
     printf("Enter the first integer:\n"); //promt user to input integer
@@ -20,7 +20,7 @@ int main( void )
 
     sum = int1 + int2; //sum integers, assign total to variable sum
 
-    printf("The sum is %d\n", sum); //print sum
+    printf("The sum is %d\n", int1 + int2); //print sum
 
     return 0; //we return 0 if the program ends succesfully
 } //end function main
