@@ -6,11 +6,15 @@ int main(void)
 {
    unsigned int sum = 0; // initialize sum
 
-   for (unsigned int number = 2; number <= 100; number += 2) {
-      sum += number; // add number to sum          
-   }
+ //  for (unsigned int number = 2; number <= 100; number += 2) {
+ //     sum += number; // add number to sum          
+ //  }
 
-   printf("Sum is %u\n", sum); 
+   for (int i = 0;i <= 100; ++i)
+   {
+	   printf("%d\n",i);
+   }
+  // printf("Sum is %u\n", sum); 
 }
 
 
