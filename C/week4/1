@@ -1,0 +1,14 @@
+//adding time to code in C
+//
+
+#include<stdio.h>
+#include<time.h>
+
+int main(void)
+{
+    time_t seconds;
+
+    seconds = time(NULL);
+
+    printf("%ld",seconds);
+}
