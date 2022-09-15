@@ -6,7 +6,7 @@ void useLocal(void); // function prototype
 void useStaticLocal(void); // function prototype
 void useGlobal(void); // function prototype
 
-int x = 1; // global variable
+const int x = 1; // global variable
 
 int main(void)
 {
