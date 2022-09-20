@@ -22,7 +22,7 @@ int main(void)
 // calculate and return cube of integer argument                 
 int cubeByValue(int *nPtr)                  //c4                          
 {                                                                   
-   return *nPtr * *nPtr * *nPtr; // cube local variable n and return result //c5, c6
+   *nPtr = *nPtr * *nPtr * *nPtr; // cube local variable n and return result //c5, c6
 }
                             
 
