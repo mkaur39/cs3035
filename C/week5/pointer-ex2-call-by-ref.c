@@ -5,7 +5,7 @@
 // It will deference the pointer and cube the value that nPtr points to.
 #include <stdio.h>
 
-int cubeByValue(int n); // prototype  //c1
+int cubeByValue(int *nPtr); // prototype  //c1
 
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
    printf("The original value of number is %d", number);
    
    // pass number by value to cubeByValue
-   number = cubeByValue(number); //c2,c3
+   cubeByValue(&number); //c2,c3
 
    printf("\nThe new value of number is %d\n", number);
 } 
 
 // calculate and return cube of integer argument                 
-int cubeByValue(int n)                  //c4                          
+int cubeByValue(int *nPtr)                  //c4                          
 {                                                                   
-   return n * n * n; // cube local variable n and return result //c5, c6
+   *nPtr = *nPtr * *nPtr * *nPtr; // cube local variable n and return result //c5, c6
 }
                             
 
