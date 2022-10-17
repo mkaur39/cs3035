@@ -16,7 +16,7 @@ int main( void )
 {
     double testVariable = 200.0;
 
-    printf("Square Root of %0.2f is %0.2f", testVariable, sqrt(testVariable));
+    printf("Square Root of %0.2f is %5.2f", testVariable, sqrt(testVariable));
 
 }
 

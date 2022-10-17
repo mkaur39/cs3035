@@ -25,13 +25,13 @@ int main( void )
     printf("e = %d\n", e);
 
     //Expression 1:
-    //result = a + b * c;
-    //result = (a + b) * c;
+   //  result = a + b * c;
+   // result = (a + b) * c;
     //result = (a + b / c) * d;
     //result = ((a + b) / c) * d;
     //result = a / b * c % d;
     //result = a / b + c + c * e - e; 
-    result = (a / b) + c + (c * e) - e;
+    //result = (a / b) + c + (c * e) - e;
 
     printf("The result is: %d\n", result);
     

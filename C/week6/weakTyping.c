@@ -9,7 +9,7 @@ int main (void)
     char* name = "Bob";
     
 //    int comb = x + name;
-    int comb = x + (int)name;
+    int comb = x + (float)((int)name);
 
     printf("%d",comb);
 }

@@ -23,7 +23,7 @@ int main(void)
          case 'A': // grade was uppercase A
          case 'a': // or lowercase a
             ++aCount; 
-            break; // necessary to exit switch
+      //      break; // necessary to exit switch
 
          case 'B': // grade was uppercase B
          case 'b': // or lowercase b
