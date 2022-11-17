@@ -19,7 +19,7 @@ main = do
     let list1 = [1,2,3,4,5]
     let list2 = []
     
-    print (addVector a b)
+    print ("This" ++ show(addVector a b))
     print (firstElem a)
     print (firstElemList list1)
     print (firstElemList list2)

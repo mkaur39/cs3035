@@ -1,12 +1,12 @@
 
 def warn():
-    #global m
+    global m
     m = "Mothra"
     print("Watch out, " + str(m) + " is coming!")
 	
 def welcome():
     #global m
-    #m = "Godzilla"
+    m = "Godzilla"
     print("Welcome, " + str(m) + "!")
 	
 warn()

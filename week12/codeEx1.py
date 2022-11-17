@@ -1,4 +1,4 @@
-x = 2    
+x = 1    
 
 if x == 1:
 	def function1():
