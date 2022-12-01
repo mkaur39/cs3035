@@ -1,0 +1,89 @@
+Solution by Jason Alvarez:
+
+Python:
+
+def APRGenerator(credit):
+    if credit >= 800 and credit <= 850:
+        print("You get a APR of 3% \n")
+    elif credit >= 700 and credit <= 799:
+        print("You get a APR of 5% \n")
+    elif credit >= 600 and credit <= 699:
+        print("You get a APR of 8% \n")
+    elif credit >= 500 and credit <= 599:
+        print("You get a APR of 11% \n")
+    elif credit < 500:
+        print("You get a APR of 23% \n")    
+    
+APRGenerator(510)
+APRGenerator(490)
+APRGenerator(600)
+APRGenerator(810)
+APRGenerator(750)
+
+ 
+
+------------------------------------------------------------------------------------------------
+
+C:
+
+#include <stdio.h>
+void APRSelector(int credit);
+int main(void){
+    
+    int customer1Credit = 825;
+    int customer2Credit = 755;    
+    int customer3Credit = 650;
+    int customer4Credit = 524;
+    int customer5Credit = 400;
+    
+
+    APRSelector(customer2Credit);
+    APRSelector(customer3Credit);
+    APRSelector(customer4Credit);
+    APRSelector(customer5Credit);
+    APRSelector(customer1Credit);
+    
+    
+}
+
+void APRSelector(int credit){
+    if (credit >= 800 && credit <= 850){
+        printf("You get a APR of 3%% \n");
+    }
+    
+    else if (credit >= 700 && credit <= 799){
+        printf("You get a APR of 5%% \n");
+    }
+    
+    else if (credit >= 600 && credit <= 699){
+        printf("You get a APR of 8%% \n");
+    }
+    
+    else if (credit >= 500 && credit <= 599){
+        printf("You get a APR of 11%% \n");
+    }
+    
+    else if (credit < 500 ){
+        printf("You get a APR of 23%% \n");
+    }
+
+------------------------------------------------------------------------------------------------
+
+Haskell:
+
+aprGenerator :: Int  -> String
+aprGenerator a 
+    | a >= 800 = "You get an APR of 3%"
+    | a >= 700 = "You get an APR of 5%"
+    | a >= 600 = "You get an APR of 8%"
+    | a >= 500 = "You get an APR of 11%"
+    | a >= 0 = "You get an APR of 23%"
+    
+
+ 
+
+main = do 
+    let a = 810
+    print (aprGenerator a)
+
+

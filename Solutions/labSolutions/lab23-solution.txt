@@ -1,0 +1,57 @@
+Solution by Jordan Doose:
+
+-------------------------------------------------
+Closure:
+
+def make_offsetter(offset):
+    def offset_value(value):
+        return value + offset
+    return offset_value
+
+offsetter = make_offsetter(10)
+print(offsetter(5))
+print(offsetter(20))
+print(offsetter(100))
+
+
+---------------------------------------------------
+Higher Order Function in C:
+
+#include <stdio.h>
+
+int* arrayBlend(int* arrayIn, int* arrayOut, int size, int (*elemFunc)(int), int (*blendFunc)(int, int))
+{
+    for(int i = 0; i < size; i++)
+    {
+        arrayOut[i] = blendFunc(elemFunc(arrayIn[i]), elemFunc(arrayIn[(i + 1) % size]));
+    }
+
+    return arrayOut;
+}
+
+int myOffset(int input)
+{
+    return input + 5;
+}
+
+int myBlend(int input1, int input2)
+{
+    return ((3 * input1) + (7 * input2)) / 10;
+}
+
+int main()
+{
+    int myArray[6] = {0, 10, 20, 30, 40, 50};
+    int outputArray[6];
+
+    arrayBlend(myArray, outputArray, 6, *myOffset, *myBlend);
+
+    for(int i = 0; i < 6; i++)
+    {
+        printf("%d\n", outputArray[i]);
+    }
+
+    return 0;
+}
+
+
